@@ -1,11 +1,28 @@
-<div class="logo">creative</div>
+<div class="logo">
+  <a [routerLink]="['/']">
+    <img src="../../../../assets/pics/logo.png" alt="logo" class="logo_img" />
+    creative
+  </a>
+</div>
 <div class="menu">
   <ul class="menu_items">
-    <li class="menu_item">Dashboard</li>
-    <li class="menu_item">User info</li>
-    <li class="menu_item">Table list</li>
-    <li class="menu_item">Icons</li>
-    <li class="menu_item">Maps</li>
-    <li class="menu_item">Notification</li>
+    <li class="menu_item" routerLinkActive="active">
+      <a [routerLink]="['/dashboard']">Dashboard</a>
+    </li>
+    <li class="menu_item" routerLinkActive="active">
+      <a [routerLink]="['/user']">User info</a>
+    </li>
+    <li class="menu_item" routerLinkActive="active">
+      <a [routerLink]="['/table']">Table list</a>
+    </li>
+    <li class="menu_item" routerLinkActive="active">
+      <a [routerLink]="['/icons']"> Icons</a>
+    </li>
+    <li class="menu_item" routerLinkActive="active">
+      <a [routerLink]="['/maps']">Maps</a>
+    </li>
+    <li class="menu_item" routerLinkActive="active">
+      <a [routerLink]="['/notification']">Notification</a>
+    </li>
   </ul>
 </div>

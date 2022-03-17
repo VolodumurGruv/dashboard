@@ -1,0 +1,40 @@
+@import "./fonts";
+
+nav {
+  display: block;
+  position: absolute;
+  width: 15rem;
+  height: 100%;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.459);
+  background-color: rgba(128, 128, 128, 0.05);
+}
+.logo {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 1.2rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+  text-transform: uppercase;
+  font-family: 700, $font-lato;
+
+  &_img {
+    width: 25px;
+  }
+}
+
+.menu {
+  &_items {
+    list-style: none;
+  }
+
+  &_item {
+    margin: 1rem;
+    font-family: 500, $font-lato;
+  }
+}
+
+.active {
+  border-radius: 5px;
+  padding: 0.6rem 0.2rem;
+  color: white;
+  background-color: rgba(189, 19, 19, 0.438);
+}

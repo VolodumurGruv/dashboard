@@ -27,6 +27,18 @@ const routes: Routes = [
         loadChildren: () =>
           import('./icons/icons.module').then((m) => m.IconsModule),
       },
+      {
+        path: 'maps',
+        loadChildren: () =>
+          import('./maps/maps.module').then((m) => m.MasModule),
+      },
+      {
+        path: 'notification',
+        loadChildren: () =>
+          import('./notification/notification.module').then(
+            (m) => m.NotificationModule
+          ),
+      },
     ],
   },
   { path: '**', redirectTo: '/', pathMatch: 'full' },

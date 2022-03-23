@@ -7,22 +7,26 @@
 <div class="menu">
   <ul class="menu_items">
     <li class="menu_item" routerLinkActive="active">
-      <a [routerLink]="['/dashboard']">Dashboard</a>
+      <a [routerLink]="['/dashboard']">
+        <mat-icon>dashboard</mat-icon> Dashboard</a
+      >
     </li>
     <li class="menu_item" routerLinkActive="active">
-      <a [routerLink]="['/user']">User info</a>
+      <a [routerLink]="['/user']"><mat-icon>person</mat-icon> User info</a>
     </li>
     <li class="menu_item" routerLinkActive="active">
-      <a [routerLink]="['/table']">Table list</a>
+      <a [routerLink]="['/table']"><mat-icon>list</mat-icon> Table list</a>
     </li>
     <li class="menu_item" routerLinkActive="active">
-      <a [routerLink]="['/icons']"> Icons</a>
+      <a [routerLink]="['/icons']"> <mat-icon> bubble_chart</mat-icon>Icons</a>
     </li>
     <li class="menu_item" routerLinkActive="active">
-      <a [routerLink]="['/maps']">Maps</a>
+      <a [routerLink]="['/maps']"><mat-icon> place</mat-icon> Maps</a>
     </li>
     <li class="menu_item" routerLinkActive="active">
-      <a [routerLink]="['/notification']">Notification</a>
+      <a [routerLink]="['/notification']"
+        ><mat-icon>notifications</mat-icon> Notification</a
+      >
     </li>
   </ul>
 </div>

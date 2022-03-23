@@ -1,8 +1,8 @@
 <nav>
   <app-side-menu></app-side-menu>
 </nav>
-<div class="settings">
-  <app-settings></app-settings>
+<div class="settings" (click)="toggle()">
+  <app-settings (tog)="(tog)"></app-settings>
 </div>
 
 <router-outlet></router-outlet>

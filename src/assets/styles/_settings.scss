@@ -3,4 +3,13 @@
   position: fixed;
   right: 0;
   top: 45%;
+  cursor: pointer;
+  z-index: 100;
+
+  &_box {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.4);
+  }
 }

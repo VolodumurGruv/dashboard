@@ -1,4 +1,5 @@
 @import "./fonts";
+@import "./mixins";
 
 nav {
   display: block;
@@ -28,13 +29,19 @@ nav {
 
   &_item {
     margin: 1rem;
+    padding: 0.4rem 0.2rem;
     font-family: 500, $font-lato;
+
+    &:hover {
+      @include hover;
+
+      background-color: rgba(178, 218, 235, 0.2);
+    }
   }
 }
 
 .active {
-  border-radius: 5px;
-  padding: 0.6rem 0.2rem;
-  color: white;
-  background-color: rgba(189, 19, 19, 0.438);
+  @include hover;
+
+  background-color: rgba(178, 218, 235, 0.6);
 }
